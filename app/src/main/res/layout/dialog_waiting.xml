@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="@drawable/waiting_dialog_bg"
+        android:layout_width="88dp"
+        android:layout_height="88dp">
+
+        <com.cch.gsyvideoplayer.view.FSLVCircularSmile
+            android:id="@+id/lv_circularSmile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+    </LinearLayout>
+</RelativeLayout>
