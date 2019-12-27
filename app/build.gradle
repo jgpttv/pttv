@@ -47,7 +47,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
 
-    //完整版引入
+    //完整版引入2
     implementation 'com.shuyu:GSYVideoPlayer:6.0.3'
 
 
