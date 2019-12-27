@@ -3,7 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <FrameLayout
-        android:id="@+id/tg_fg"
+        android:id="@+id/fl_tag"
         android:layout_width="match_parent"
         android:layout_weight="1"
         android:layout_height="0dp">
@@ -20,6 +20,7 @@
             android:layout_weight="1"
             android:layout_height="match_parent">
             <ImageView
+                android:id="@+id/home"
                 android:src="@mipmap/home2"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
@@ -38,6 +39,7 @@
             android:layout_weight="1"
             android:layout_height="match_parent">
             <ImageView
+                android:id="@+id/channel"
                 android:src="@mipmap/channel"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
@@ -56,6 +58,7 @@
             android:layout_weight="1"
             android:layout_height="match_parent">
             <ImageView
+                android:id="@+id/live"
                 android:src="@mipmap/live2"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
