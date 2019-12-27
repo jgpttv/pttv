@@ -40,6 +40,7 @@ public class PlayerActivity extends AppCompatActivity {
         videoPlayer.setUp(source, false, name);
 
         //增加封面
+        //sad
         ImageView imageView = new ImageView(this);
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
         imageView.setImageResource(R.mipmap.ic_launcher);
