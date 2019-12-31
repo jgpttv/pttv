@@ -2,22 +2,22 @@
   "data": {
     "banners": [
       {
-        "img": "",
+        "img": "https://raw.githubusercontent.com/jgpttv/pttv/master/image/home/banner/banner1.png",
         "title": "湖南卫视type=1打开播放器页面",
         "type": 1,
         "url": "http://116.199.5.51:8114/index.m3u8?Fsv_chan_hls_se_idx=6&FvSeid=1&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=0&Fsv_chan_hls_se_idx=6&Fsv_rate_id=2&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Provider_id=&Pcontent_id=.m3u8&Fsv_CMSID=&Fsv_otype=1"
       },
       {
-        "img": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1577773833361&di=b6434ccc7cb5ecc94d73625432ff4aca&imgtype=0&src=http%3A%2F%2Fimg01.tooopen.com%2Fdowns%2Fimages%2F2011%2F3%2F24%2Fsy_201103241601008247-1.jpg",
-        "title": "type=2打开系统浏览器",
+        "img": "https://raw.githubusercontent.com/jgpttv/pttv/master/image/home/banner/banner2.png",
+        "title": "虎牙直播 type=2打开系统浏览器",
         "type": 2,
-        "url": "https://www.baidu.com/"
+        "url": "https://www.huya.com/"
       },
       {
-        "img": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1577773833361&di=b6434ccc7cb5ecc94d73625432ff4aca&imgtype=0&src=http%3A%2F%2Fimg01.tooopen.com%2Fdowns%2Fimages%2F2011%2F3%2F24%2Fsy_201103241601008247-1.jpg",
-        "title": "type=3打开自己的webView",
+        "img": "https://raw.githubusercontent.com/jgpttv/pttv/master/image/home/banner/banner3.png",
+        "title": "斗鱼直播  type=3打开自己的webView",
         "type": 3,
-        "url": "https://www.baidu.com/"
+        "url": "https://www.douyu.com/"
       }
     ],
     "net_rebos": [
@@ -64,42 +64,42 @@
     ],
     "rebos": [
       {
-        "tv_icon": "https://fcmy.coding.net/p/fftv/d/fftv/git/raw/master/image/icon/tb_ws_hn2.png",
-        "tv_name": "湖南卫视",
+        "tv_icon": "https://raw.githubusercontent.com/jgpttv/pttv/master/image/home/rebo/yangshi1.png",
+        "tv_name": "央视1套",
         "tv_sources": [
           {
-            "source_name": "线路2",
-            "source_url": "http://116.199.5.51:8114/index.m3u8?Fsv_chan_hls_se_idx=6&FvSeid=1&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=0&Fsv_chan_hls_se_idx=6&Fsv_rate_id=2&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Provider_id=&Pcontent_id=.m3u8&Fsv_CMSID=&Fsv_otype=1"
+            "source_name": "线路1",
+            "source_url": "http://cctvalih5ca.v.myalicdn.com/live/cctv1_2/index.m3u8"
           }
         ]
       },
       {
-        "tv_icon": "https://fcmy.coding.net/p/fftv/d/fftv/git/raw/master/image/icon/tb_ws_js.png",
-        "tv_name": "江苏卫视",
+        "tv_icon": "https://raw.githubusercontent.com/jgpttv/pttv/master/image/home/rebo/yangshi2.png",
+        "tv_name": "央视2套",
         "tv_sources": [
           {
             "source_name": "线路1",
-            "source_url": "http://116.199.5.51:8114/hls/Fsv_chan_hls_se_idx=5&FvSeid=1&Fsv_ctype=LIVES&Fsv_otype=1&Provider_id=0&Pcontent_id=8114.m3u8"
+            "source_url": "http://cctvalih5ca.v.myalicdn.com/live/cctv2_2/index.m3u8"
           }
         ]
       },
       {
-        "tv_icon": "https://fcmy.coding.net/p/fftv/d/fftv/git/raw/master/image/icon/tb_ws_zj.png",
-        "tv_name": "浙江卫视",
+        "tv_icon": "https://raw.githubusercontent.com/jgpttv/pttv/master/image/home/rebo/yangshi13.png",
+        "tv_name": "央视新闻",
         "tv_sources": [
           {
             "source_name": "线路1",
-            "source_url": "http://ali.m.l.cztv.com/channels/lantian/channel01/360p.m3u8"
+            "source_url": "http://cctvalih5ca.v.myalicdn.com/live/cctv13_2/index.m3u8"
           }
         ]
       },
       {
-        "tv_icon": "https://fcmy.coding.net/p/fftv/d/fftv/git/raw/master/image/icon/tb_ws_df.png",
-        "tv_name": "东方卫视",
+        "tv_icon": "https://raw.githubusercontent.com/jgpttv/pttv/master/image/home/rebo/hunan.png",
+        "tv_name": "湖南卫视跨年",
         "tv_sources": [
           {
             "source_name": "线路1",
-            "source_url": "http://cctvalih5ca.v.myalicdn.com/wstv/dongfang_2/index.m3u8"
+            "source_url": "http://mgzb.live.miguvideo.com:8088/wd-hunanhd-350/index.m3u8?msisdn=migu&mdspid=&spid=699017&netType=0&sid=2201064496&pid=2028597799&timestamp=20191231150331&Channel_ID=H5_&ProgramID=619858170&ParentNodeID=-99&assertID=2201064496&client_ip=116.52.237.50&SecurityKey=20191231150331&promotionId=&mvid=&mcid=&mpid=&playurlVersion=SJ-H1-0.0.3&userid=&jmhm=&videocodec=h264&encrypt=2002ca069448260fb8504e212850cfbf"
           }
         ]
       }
