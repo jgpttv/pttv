@@ -8,6 +8,7 @@ import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
@@ -49,6 +50,9 @@ public class RecommendFragment extends Fragment {
     @BindView(R.id.convenientBanner)
     ConvenientBanner banner;
 
+    @BindView(R.id.srl_refresh)
+    SwipeRefreshLayout srl_refresh;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -65,11 +69,16 @@ public class RecommendFragment extends Fragment {
 
             @Override
             public void onError(MyError e) {
+                //关闭下拉刷新
+                srl_refresh.setRefreshing(false);
                 Toast.makeText(getActivity(),"请求失败："+e.getMsg(),Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onResponse(HomeInfo obj) {
+                //关闭下拉刷新
+                srl_refresh.setRefreshing(false);
+
                 //数据获取成功
                 //设置banner数据
                 setBannerInfo(obj.getBanners());
@@ -79,6 +88,7 @@ public class RecommendFragment extends Fragment {
 
     private void setBannerInfo(final List<BannerInfo> banners) {
         ViewGroup.LayoutParams params = banner.getLayoutParams();
+        //宽高比8:5
         int height = (int) (getScreenWidth() * (5f / 8f));
 //        int height = dip2px(160);
         if (params == null) {
@@ -150,7 +160,15 @@ public class RecommendFragment extends Fragment {
     }
 
     private void initView() {
-
+        //初始化下拉刷新
+        srl_refresh.setColorSchemeResources(android.R.color.holo_blue_bright, android.R.color.holo_green_light, android.R.color.holo_orange_light);
+        //给swipeRefreshLayout绑定刷新监听
+        srl_refresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                initData();
+            }
+        });
     }
 
     @Override
