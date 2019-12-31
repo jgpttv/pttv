@@ -32,6 +32,7 @@
             android:launchMode="singleTask"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait" />
+        <activity android:launchMode="singleTop" android:name=".activity.WebViewActivity"/>
     </application>
 
 </manifest>
