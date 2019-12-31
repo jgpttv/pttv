@@ -1,0 +1,152 @@
+{
+  "data": {
+    "banners": [
+      {
+        "img": "https://raw.githubusercontent.com/jgpttv/pttv/master/image/icon/tb_ws_hn.jpg",
+        "title": "湖南卫视type=1打开播放器页面",
+        "type": 1,
+        "url": "http://116.199.5.51:8114/index.m3u8?Fsv_chan_hls_se_idx=6&FvSeid=1&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=0&Fsv_chan_hls_se_idx=6&Fsv_rate_id=2&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Provider_id=&Pcontent_id=.m3u8&Fsv_CMSID=&Fsv_otype=1"
+      },
+      {
+        "img": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1577773833361&di=b6434ccc7cb5ecc94d73625432ff4aca&imgtype=0&src=http%3A%2F%2Fimg01.tooopen.com%2Fdowns%2Fimages%2F2011%2F3%2F24%2Fsy_201103241601008247-1.jpg",
+        "title": "type=2打开系统浏览器",
+        "type": 2,
+        "url": "https://www.baidu.com/"
+      },
+      {
+        "img": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1577773833361&di=b6434ccc7cb5ecc94d73625432ff4aca&imgtype=0&src=http%3A%2F%2Fimg01.tooopen.com%2Fdowns%2Fimages%2F2011%2F3%2F24%2Fsy_201103241601008247-1.jpg",
+        "title": "type=3打开自己的webView",
+        "type": 3,
+        "url": "https://www.baidu.com/"
+      }
+    ],
+    "net_rebos": [
+      {
+        "tv_icon": "https://fcmy.coding.net/p/fftv/d/fftv/git/raw/master/image/icon/tb_ws_hn2.png",
+        "tv_name": "湖南卫视",
+        "tv_sources": [
+          {
+            "source_name": "线路2",
+            "source_url": "http://116.199.5.51:8114/index.m3u8?Fsv_chan_hls_se_idx=6&FvSeid=1&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=0&Fsv_chan_hls_se_idx=6&Fsv_rate_id=2&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Provider_id=&Pcontent_id=.m3u8&Fsv_CMSID=&Fsv_otype=1"
+          }
+        ]
+      },
+      {
+        "tv_icon": "https://fcmy.coding.net/p/fftv/d/fftv/git/raw/master/image/icon/tb_ws_js.png",
+        "tv_name": "江苏卫视",
+        "tv_sources": [
+          {
+            "source_name": "线路1",
+            "source_url": "http://116.199.5.51:8114/hls/Fsv_chan_hls_se_idx=5&FvSeid=1&Fsv_ctype=LIVES&Fsv_otype=1&Provider_id=0&Pcontent_id=8114.m3u8"
+          }
+        ]
+      },
+      {
+        "tv_icon": "https://fcmy.coding.net/p/fftv/d/fftv/git/raw/master/image/icon/tb_ws_zj.png",
+        "tv_name": "浙江卫视",
+        "tv_sources": [
+          {
+            "source_name": "线路1",
+            "source_url": "http://ali.m.l.cztv.com/channels/lantian/channel01/360p.m3u8"
+          }
+        ]
+      },
+      {
+        "tv_icon": "https://fcmy.coding.net/p/fftv/d/fftv/git/raw/master/image/icon/tb_ws_df.png",
+        "tv_name": "东方卫视",
+        "tv_sources": [
+          {
+            "source_name": "线路1",
+            "source_url": "http://cctvalih5ca.v.myalicdn.com/wstv/dongfang_2/index.m3u8"
+          }
+        ]
+      }
+    ],
+    "rebos": [
+      {
+        "tv_icon": "https://fcmy.coding.net/p/fftv/d/fftv/git/raw/master/image/icon/tb_ws_hn2.png",
+        "tv_name": "湖南卫视",
+        "tv_sources": [
+          {
+            "source_name": "线路2",
+            "source_url": "http://116.199.5.51:8114/index.m3u8?Fsv_chan_hls_se_idx=6&FvSeid=1&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=0&Fsv_chan_hls_se_idx=6&Fsv_rate_id=2&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Provider_id=&Pcontent_id=.m3u8&Fsv_CMSID=&Fsv_otype=1"
+          }
+        ]
+      },
+      {
+        "tv_icon": "https://fcmy.coding.net/p/fftv/d/fftv/git/raw/master/image/icon/tb_ws_js.png",
+        "tv_name": "江苏卫视",
+        "tv_sources": [
+          {
+            "source_name": "线路1",
+            "source_url": "http://116.199.5.51:8114/hls/Fsv_chan_hls_se_idx=5&FvSeid=1&Fsv_ctype=LIVES&Fsv_otype=1&Provider_id=0&Pcontent_id=8114.m3u8"
+          }
+        ]
+      },
+      {
+        "tv_icon": "https://fcmy.coding.net/p/fftv/d/fftv/git/raw/master/image/icon/tb_ws_zj.png",
+        "tv_name": "浙江卫视",
+        "tv_sources": [
+          {
+            "source_name": "线路1",
+            "source_url": "http://ali.m.l.cztv.com/channels/lantian/channel01/360p.m3u8"
+          }
+        ]
+      },
+      {
+        "tv_icon": "https://fcmy.coding.net/p/fftv/d/fftv/git/raw/master/image/icon/tb_ws_df.png",
+        "tv_name": "东方卫视",
+        "tv_sources": [
+          {
+            "source_name": "线路1",
+            "source_url": "http://cctvalih5ca.v.myalicdn.com/wstv/dongfang_2/index.m3u8"
+          }
+        ]
+      }
+    ],
+    "tv_rebos": [
+      {
+        "tv_icon": "https://fcmy.coding.net/p/fftv/d/fftv/git/raw/master/image/icon/tb_ws_hn2.png",
+        "tv_name": "湖南卫视",
+        "tv_sources": [
+          {
+            "source_name": "线路2",
+            "source_url": "http://116.199.5.51:8114/index.m3u8?Fsv_chan_hls_se_idx=6&FvSeid=1&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=0&Fsv_chan_hls_se_idx=6&Fsv_rate_id=2&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Provider_id=&Pcontent_id=.m3u8&Fsv_CMSID=&Fsv_otype=1"
+          }
+        ]
+      },
+      {
+        "tv_icon": "https://fcmy.coding.net/p/fftv/d/fftv/git/raw/master/image/icon/tb_ws_js.png",
+        "tv_name": "江苏卫视",
+        "tv_sources": [
+          {
+            "source_name": "线路1",
+            "source_url": "http://116.199.5.51:8114/hls/Fsv_chan_hls_se_idx=5&FvSeid=1&Fsv_ctype=LIVES&Fsv_otype=1&Provider_id=0&Pcontent_id=8114.m3u8"
+          }
+        ]
+      },
+      {
+        "tv_icon": "https://fcmy.coding.net/p/fftv/d/fftv/git/raw/master/image/icon/tb_ws_zj.png",
+        "tv_name": "浙江卫视",
+        "tv_sources": [
+          {
+            "source_name": "线路1",
+            "source_url": "http://ali.m.l.cztv.com/channels/lantian/channel01/360p.m3u8"
+          }
+        ]
+      },
+      {
+        "tv_icon": "https://fcmy.coding.net/p/fftv/d/fftv/git/raw/master/image/icon/tb_ws_df.png",
+        "tv_name": "东方卫视",
+        "tv_sources": [
+          {
+            "source_name": "线路1",
+            "source_url": "http://cctvalih5ca.v.myalicdn.com/wstv/dongfang_2/index.m3u8"
+          }
+        ]
+      }
+    ]
+  },
+  "msg": "获取列表成功",
+  "status": 1
+}
