@@ -2,7 +2,7 @@
   "data": {
     "banners": [
       {
-        "img": "https://raw.githubusercontent.com/jgpttv/pttv/master/image/icon/tb_ws_hn.jpg",
+        "img": "",
         "title": "湖南卫视type=1打开播放器页面",
         "type": 1,
         "url": "http://116.199.5.51:8114/index.m3u8?Fsv_chan_hls_se_idx=6&FvSeid=1&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=0&Fsv_chan_hls_se_idx=6&Fsv_rate_id=2&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Provider_id=&Pcontent_id=.m3u8&Fsv_CMSID=&Fsv_otype=1"
@@ -22,7 +22,7 @@
     ],
     "net_rebos": [
       {
-        "tv_icon": "https://fcmy.coding.net/p/fftv/d/fftv/git/raw/master/image/icon/tb_ws_hn2.png",
+        "tv_icon": "http://imgtianqi.eastday.com/res/upload/ue/image/20191230/1577696026298848.jpg",
         "tv_name": "湖南卫视",
         "tv_sources": [
           {
