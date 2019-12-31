@@ -80,6 +80,9 @@ dependencies {
 
     implementation 'com.github.bumptech.glide:glide:4.9.0'
 
-
+    //轮播图
     implementation 'com.bigkoo:ConvenientBanner:2.1.4'
+
+    //圆角矩形ImageView
+    implementation 'com.makeramen:roundedimageview:2.3.0'
 }

@@ -1,13 +1,11 @@
 package com.cch.gsyvideoplayer.fragment;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -15,6 +13,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -32,6 +31,7 @@ import com.cch.gsyvideoplayer.activity.PlayerActivity;
 import com.cch.gsyvideoplayer.activity.WebViewActivity;
 import com.cch.gsyvideoplayer.bean.BannerInfo;
 import com.cch.gsyvideoplayer.bean.HomeInfo;
+import com.cch.gsyvideoplayer.bean.VideoInfo;
 import com.cch.gsyvideoplayer.http.API;
 import com.cch.gsyvideoplayer.http.ObjCallBack;
 import com.zhy.http.okhttp.OkHttpUtils;
@@ -53,6 +53,13 @@ public class RecommendFragment extends Fragment {
     @BindView(R.id.srl_refresh)
     SwipeRefreshLayout srl_refresh;
 
+    @BindView(R.id.gl_rebo)
+    GridLayout gl_rebo;
+    @BindView(R.id.gl_tv_rebo)
+    GridLayout gl_tv_rebo;
+    @BindView(R.id.gl_net_rebo)
+    GridLayout gl_net_rebo;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -71,7 +78,7 @@ public class RecommendFragment extends Fragment {
             public void onError(MyError e) {
                 //关闭下拉刷新
                 srl_refresh.setRefreshing(false);
-                Toast.makeText(getActivity(),"请求失败："+e.getMsg(),Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "请求失败：" + e.getMsg(), Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -82,8 +89,45 @@ public class RecommendFragment extends Fragment {
                 //数据获取成功
                 //设置banner数据
                 setBannerInfo(obj.getBanners());
+
+                setData(gl_rebo, obj.getRebos());
+                setData(gl_tv_rebo, obj.getTv_rebos());
+                setData(gl_net_rebo, obj.getNet_rebos());
             }
         });
+    }
+
+    private void setData(GridLayout gridLayout, List<VideoInfo> videos) {
+        //先删除数据
+        gridLayout.removeAllViews();
+        if (videos != null && videos.size() != 0) {
+
+            for (int i=0;i<videos.size();i++) {
+                VideoInfo info = videos.get(i);
+                //需要动态添加的Item
+                View item = LayoutInflater.from(getActivity()).inflate(R.layout.item_home_data, null);
+                ImageView iv_img=item.findViewById(R.id.iv_img);
+                TextView tv_name=item.findViewById(R.id.tv_name);
+                //设置数据
+                tv_name.setText(info.getTv_name());
+                Glide
+                        .with(RecommendFragment.this)
+                        .load(info.getTv_icon())
+                        .centerCrop()
+                        .into(iv_img);
+
+                //动态设置Item的宽高比4:3
+                //每行个数
+                int columnCount = gridLayout.getColumnCount();
+                //每个条目宽度
+                int itemWidth = getScreenWidth() / columnCount;
+                int itemHeight = (3 * itemWidth) / 4;
+                GridLayout.LayoutParams lp = new GridLayout.LayoutParams();
+                lp.width = itemWidth;
+                lp.height = itemHeight;
+                gridLayout.addView(item, lp);
+            }
+        }
     }
 
     private void setBannerInfo(final List<BannerInfo> banners) {
@@ -124,18 +168,18 @@ public class RecommendFragment extends Fragment {
                         public void onItemClick(int position) {
                             BannerInfo info = banners.get(position);
                             //ad_type 1：下载页面 2：h5页面
-                            if (info.getType()==1) {
+                            if (info.getType() == 1) {
                                 Intent intent = new Intent(getActivity(), PlayerActivity.class);
                                 intent.putExtra(PlayerActivity.VIDEO_NAME_EXTRA, info.getTitle());
                                 intent.putExtra(PlayerActivity.VIDEO_SOURCE_EXTRA, info.getUrl());
                                 startActivity(intent);
-                            } else if (info.getType()==2) {
+                            } else if (info.getType() == 2) {
                                 Intent intent = new Intent();
                                 intent.setAction("android.intent.action.VIEW");
                                 Uri content_url = Uri.parse(info.getUrl());
                                 intent.setData(content_url);
                                 startActivity(intent);
-                            } else if (info.getType()==3) {
+                            } else if (info.getType() == 3) {
                                 Intent intent = new Intent(getActivity(), WebViewActivity.class);
                                 intent.putExtra("url", info.getUrl());
                                 startActivity(intent);
@@ -179,7 +223,7 @@ public class RecommendFragment extends Fragment {
 
     //点击打开频道界面
     @OnClick(R.id.gengduo_1)
-    void zhuan1(){
+    void zhuan1() {
 
     }
 
@@ -194,8 +238,8 @@ public class RecommendFragment extends Fragment {
 
         @Override
         protected void initView(View itemView) {
-            imageView=itemView.findViewById(R.id.iv_img);
-            textView=itemView.findViewById(R.id.tv_title);
+            imageView = itemView.findViewById(R.id.iv_img);
+            textView = itemView.findViewById(R.id.tv_title);
         }
 
         @Override
