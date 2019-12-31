@@ -63,10 +63,11 @@
 
                 <GridLayout
                     android:id="@+id/gl_rebo"
-                    android:columnCount="2"
-                    android:background="@android:color/white"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:background="@android:color/white"
+                    android:columnCount="2" />
 
 
                 <LinearLayout
@@ -103,10 +104,11 @@
 
                 <GridLayout
                     android:id="@+id/gl_tv_rebo"
-                    android:columnCount="2"
-                    android:background="@android:color/white"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:background="@android:color/white"
+                    android:columnCount="2" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -142,10 +144,11 @@
 
                 <GridLayout
                     android:id="@+id/gl_net_rebo"
-                    android:background="@android:color/white"
-                    android:columnCount="2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:background="@android:color/white"
+                    android:columnCount="2" />
 
             </LinearLayout>
 

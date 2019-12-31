@@ -102,12 +102,25 @@ public class RecommendFragment extends Fragment {
         gridLayout.removeAllViews();
         if (videos != null && videos.size() != 0) {
 
-            for (int i=0;i<videos.size();i++) {
-                VideoInfo info = videos.get(i);
+            for (int i = 0; i < videos.size(); i++) {
+                final VideoInfo info = videos.get(i);
                 //需要动态添加的Item
                 View item = LayoutInflater.from(getActivity()).inflate(R.layout.item_home_data, null);
-                ImageView iv_img=item.findViewById(R.id.iv_img);
-                TextView tv_name=item.findViewById(R.id.tv_name);
+                item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if (info != null && info.getTv_sources() != null && info.getTv_sources().size() != 0) {
+                            Intent intent = new Intent(getActivity(), PlayerActivity.class);
+                            intent.putExtra(PlayerActivity.VIDEO_NAME_EXTRA, info.getTv_name());
+                            intent.putExtra(PlayerActivity.VIDEO_SOURCE_EXTRA, info.getTv_sources().get(0).getSource_url());
+                            startActivity(intent);
+                        } else {
+                            Toast.makeText(getActivity(), "播放源不存在", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+                ImageView iv_img = item.findViewById(R.id.iv_img);
+                TextView tv_name = item.findViewById(R.id.tv_name);
                 //设置数据
                 tv_name.setText(info.getTv_name());
                 Glide
