@@ -22,8 +22,10 @@
         android:orientation="horizontal">
 
         <LinearLayout
+            android:id="@+id/ll_home"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -38,14 +40,19 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="首页"
+                android:textColor="#212325"
+                android:id="@+id/tv_home"
                 android:textSize="12sp" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/ll_channel"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
             android:layout_weight="1"
             android:orientation="vertical">
+
 
             <ImageView
                 android:id="@+id/channel"
@@ -57,13 +64,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="#212325"
+                android:id="@+id/tv_channel"
                 android:text="频道"
                 android:textSize="12sp" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/ll_live"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -78,6 +89,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="直播"
+                android:textColor="#212325"
+                android:id="@+id/tv_live"
                 android:textSize="12sp" />
         </LinearLayout>
     </LinearLayout>
