@@ -1,0 +1,31 @@
+{
+  "data": [
+    {
+      "icon": "https://raw.githubusercontent.com/jgpttv/pttv/master/image/channel/channel_hot.png",
+      "name": "热播",
+      "url": "https://raw.githubusercontent.com/jgpttv/pttv/master/json/channels/channel_hot.json"
+    },
+    {
+      "icon": "https://raw.githubusercontent.com/jgpttv/pttv/master/image/channel/channel_cctv.png",
+      "name": "央视",
+      "url": "https://raw.githubusercontent.com/jgpttv/pttv/master/json/channels/channel_cctv.json"
+    },
+    {
+      "icon": "https://raw.githubusercontent.com/jgpttv/pttv/master/image/channel/channel_wx.png",
+      "name": "卫视",
+      "url": "https://raw.githubusercontent.com/jgpttv/pttv/master/json/channels/channel_wx.json"
+    },
+    {
+      "icon": "https://raw.githubusercontent.com/jgpttv/pttv/master/image/channel/channel_tiyu.png",
+      "name": "卫视",
+      "url": "https://raw.githubusercontent.com/jgpttv/pttv/master/json/channels/channel_tiyu.json"
+    },
+    {
+      "icon": "https://raw.githubusercontent.com/jgpttv/pttv/master/image/channel/channel_movie.png",
+      "name": "影视",
+      "url": "https://raw.githubusercontent.com/jgpttv/pttv/master/json/channels/channel_movie.json"
+    }
+  ],
+  "msg": "获取列表成功",
+  "status": 1
+}

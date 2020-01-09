@@ -1,0 +1,26 @@
+{
+  "data": [
+    {
+      "tv_icon": "https://fcmy.coding.net/p/fftv/d/fftv/git/raw/master/image/icon/tb_ws_df.png",
+      "tv_name": "东方卫视",
+      "tv_sources": [
+        {
+          "source_name": "线路1",
+          "source_url": "http://cctvalih5ca.v.myalicdn.com/wstv/dongfang_2/index.m3u8"
+        }
+      ]
+    },
+    {
+      "tv_icon": "https://fcmy.coding.net/p/fftv/d/fftv/git/raw/master/image/icon/tb_ws_gd.png",
+      "tv_name": "广东卫视",
+      "tv_sources": [
+        {
+          "source_name": "线路1",
+          "source_url": "http://cctvalih5ca.v.myalicdn.com/wstv/guangdong_2/index.m3u8"
+        }
+      ]
+    }
+  ],
+  "msg": "获取列表成功",
+  "status": 1
+}
